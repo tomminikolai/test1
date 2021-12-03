@@ -11,8 +11,9 @@ while 1:
         ser1.write(xd + b'\n')
         if int(xd.decode('utf-8')) == 1:
             line = ser1.readline().decode('utf-8').rstrip()
-    else:
+    elif var == 2:
         ser2.write(xd + b'\n')
         if int(xd.decode('utf-8')) == 1:
             line = ser2.readline().decode('utf-8').rstrip()
+    else:
     print(line)
