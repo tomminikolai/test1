@@ -1,4 +1,3 @@
-import time
 import serial
 ser1 = serial.Serial('/dev/ttyUSB0')
 print(ser1.name)
