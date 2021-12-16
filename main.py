@@ -8,7 +8,7 @@ while 1:
     xd = str(input("enter a number: ")).encode('utf-8')
     if var == 1:
         ser1.write(xd + b'\n')
-        if int(xd.decode('utf-8')) == 1:
+        if int(xd.decode('utf-8')) == 1 or int(xd.decode('utf-8')) == 0:
             line = ser1.readline().decode('utf-8').rstrip()
     if var == 2:
         ser2.write(xd + b'\n')
